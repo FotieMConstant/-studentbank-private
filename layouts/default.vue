@@ -1,5 +1,16 @@
 <template>
-    <div>
-      <slot />
-    </div>
+  <div>
+    <section-NavBar />
+    <slot />
+  </div>
 </template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="scss" scoped>
+
+</style>
