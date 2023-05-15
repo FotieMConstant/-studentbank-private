@@ -30,12 +30,12 @@ export default {
 			img: "1.png"
 		  },
 		  {
-			name: "Banque",
+			name: "Logement",
 			description: "Lorem ipsum dolor sit amet",
 			img: "2.png"
 		  },
 		  {
-			name: "Banque",
+			name: "Mobilité",
 			description: "Lorem ipsum dolor sit amet",
 			img: "3.png"
 		  }
