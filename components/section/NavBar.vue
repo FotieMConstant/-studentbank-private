@@ -2,7 +2,7 @@
   <div>
     <header
       id="top"
-      class="w-full flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l"
+      class="w-full flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l z-50	"
     >
       <nav
         id="site-menu"

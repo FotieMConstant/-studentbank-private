@@ -28,3 +28,9 @@ export default {
   },
 }
 </script>
+<style>
+.__grdientBg {
+  background: rgb(237,23,76);
+  background: linear-gradient(90deg, rgba(237,23,76,1) 0%, rgba(245,130,32,1) 100%);
+}
+</style>

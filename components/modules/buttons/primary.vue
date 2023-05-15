@@ -1,5 +1,5 @@
 <template>
-	<button class="px-8 py-3 m-2 text-lg border rounded dark:dark:text-gray-50 dark:dark:border-red-accent">
+	<button class="px-10 py-3 m-2 text-lg border-2 rounded bg-white text-gray-700 border-red-accent shadow-md">
         <slot />
     </button>
 </template>

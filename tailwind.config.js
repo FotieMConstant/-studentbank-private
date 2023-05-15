@@ -9,6 +9,11 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./app.vue",
   ],
+  variants: {
+    extend: {
+      backgroundImage: ["dark"],
+    },
+  },
   theme: {
     extend: {
       colors: {
@@ -76,6 +81,11 @@ module.exports = {
           400: "#58606A",
           500: "#24292F",
         },
+      },
+      backgroundImage: {
+        "orange-light": "linear-gradient(90deg, rgba(251,203,194,1) 0%, rgba(252,217,188,1) 100%)",
+        "brown-dark": "linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,1) 100%)",
+        // 'leafs'
       }
     },
   },

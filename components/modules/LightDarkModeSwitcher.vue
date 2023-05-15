@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div @click="toggleDark()" class="dark:bg-gray-800 dark:text-white p-3 rounded-b-lg shadow sm:shadow-md">
+    <div @click="toggleDark()" class="dark:bg-gray-800 dark:text-white p-3 rounded-b-lg shadow sm:shadow-md bg-white cursor-pointer">
       <!-- moon -->
       <svg v-if="!isDark" class="w-4" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_582_213)">
