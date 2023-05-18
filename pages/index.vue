@@ -1,6 +1,12 @@
 <template>
    <div>
       <section-HeroHeader/>
+      <div>
+         <section-VideoBar/>
+      </div>
+      <div>
+         <section-ExpencesSection/>
+      </div>
    </div>
 </template>
 <script>

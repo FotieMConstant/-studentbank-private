@@ -55,10 +55,10 @@
             href="#"
           >Contacts</a>
         </div>
-      </nav>
-      <div class="text-dark absolute z-50 right-5 top-16">
+        <div class="text-dark absolute z-50 right-5 top-16">
         <modules-LightDarkModeSwitcher/>
       </div>
+      </nav>
     </header>
   </div>
 </template>

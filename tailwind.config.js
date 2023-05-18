@@ -85,6 +85,8 @@ module.exports = {
       backgroundImage: {
         "orange-light": "linear-gradient(90deg, rgba(251,203,194,1) 0%, rgba(252,217,188,1) 100%)",
         "brown-dark": "linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,1) 100%)",
+        "orange-fade-hz": "linear-gradient(90deg, rgba(237,23,76,1) 0%, rgba(245,130,32,1) 100%)",
+        "white-normal": "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%)",
         // 'leafs'
       }
     },
