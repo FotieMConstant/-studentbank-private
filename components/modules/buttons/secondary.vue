@@ -1,5 +1,5 @@
 <template>
-	<button :class="isDark ? `bg-gradient-to-r from-[#F58220] to-[#ED174C]` : `bg-gradient-to-r from-[#ED174C] to-[#F58220]`" class="rounded-xl p-[3px] shadow-md">
+	<button :class="isDark ? `bg-gradient-to-r from-[#F58220] to-[#ED174C]` : `bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFF]`" class="rounded-xl p-[3px] shadow-md">
         <div class="px-10 py-3 text-base rounded-xl text-white dark:text-gray-900 dark:bg-white-normal bg-orange-fade-hz">
             <slot />
         </div>

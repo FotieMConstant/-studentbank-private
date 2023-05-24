@@ -7,6 +7,18 @@
       <div>
          <section-ExpencesSection/>
       </div>
+      <div>
+         <section-BankCardSection/>
+      </div>
+      <div>
+         <section-YourAdvantagesSection/>
+      </div>
+      <div>
+         <section-HelpRentSection/>
+      </div>
+      <div>
+         <section-GoInternationalSection/>
+      </div>
    </div>
 </template>
 <script>
