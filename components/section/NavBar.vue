@@ -12,14 +12,12 @@
           class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center"
         >
           <a
-            href="#"
+            href="/"
             class="no-underline py-1"
           >
             <h1 class="font-bold text-lg tracking-widest">
               <div class="w-36">
-                <a href="/">
-                  <img src="~/assets/images/logo.png">
-                </a>
+                  <img src="~/assets/images/logo.png" alt="">
               </div>
             </h1>
           </a>
