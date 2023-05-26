@@ -1,7 +1,7 @@
 <template>
 	<section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
     <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
-        <video class="min-w-full min-h-full absolute object-cover" src="https://res.cloudinary.com/oscarjite/video/upload/v1663096368/video3_vfcnhd.mp4" type="video/mp4" autoplay muted loop></video>
+        <video class="min-w-full min-h-full absolute object-cover" src="~/assets/video/_import_609113a1be0e89.39394997_preview.mp4" type="video/mp4" autoplay muted loop></video>
     </div>
     <div class="video-content space-y-2">
         <h1 class="font-light text-6xl">Lorem ipsum dolor</h1>

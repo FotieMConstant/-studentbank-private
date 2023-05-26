@@ -59,6 +59,7 @@
       CONNECTE TOI AVEC NOUS
     </p>
     <div class="flex space-x-4 justify-center mt-2">
+    <a href="#" target="_blank" rel="noopener noreferrer">
      <svg
       width="40"
       height="39"
@@ -80,6 +81,8 @@
         </clipPath>
       </defs>
     </svg>
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer">
     <svg
       width="40"
       height="39"
@@ -101,6 +104,8 @@
         </clipPath>
       </defs>
     </svg>
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer">
     <svg
       width="40"
       height="39"
@@ -122,6 +127,7 @@
         </clipPath>
       </defs>
     </svg>
+    </a>
     </div>
   </div>
 </div>
