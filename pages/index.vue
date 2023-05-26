@@ -18,6 +18,12 @@
       </div>
       <div>
          <section-GoInternationalSection/>
+      </div> 
+      <div>
+         <section-TestimonialSection/>
+      </div>
+      <div>
+         <section-FooterSection/>
       </div>
    </div>
 </template>
