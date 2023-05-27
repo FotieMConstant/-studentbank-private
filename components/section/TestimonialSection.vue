@@ -17,7 +17,7 @@
             </div>
         </div>
 </section>
-<section class="flex justify-between bg-white dark:bg-brown-dark dark:text-white border-b-2 border-r-2 border-l-2 border-black dark:border-white p-6">
+<section class="flex justify-between bg-white dark:bg-brown-dark dark:text-white border-r-2 border-l-2 border-black dark:border-white p-6">
     <div class="flex justify-between w-full">
        <img v-if="isDark" v-for="n in 4" :key="n" src="~/assets/images/other/tick_light.png" alt="">
        <img v-else v-for="k in 4" :key="k" src="~/assets/images/other/tick_dark.png" alt="">
