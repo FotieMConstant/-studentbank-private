@@ -9,7 +9,9 @@
 			<h1 class="text-4xl font-bold leading-none sm:text-5xl">Une banque pour les étudiants</h1>
 			<!-- <p class="px-8 mt-8 mb-12 text-lg">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p> -->
 			<div class="flex flex-wrap justify-center mt-8">
-                <modules-buttons-primary>Être accompagné</modules-buttons-primary>
+				<a href="/book">
+                	<modules-buttons-primary>Être accompagné</modules-buttons-primary>
+				</a>
             </div>
 		</div>
 		<!-- services card -->

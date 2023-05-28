@@ -65,10 +65,6 @@
       </div>
       </nav>
     </header>
-    <!-- chat button -->
-    <img v-if="isDark" class="fixed z-50 h-12 bottom-4 right-4" src="~/assets/images/other/btn_chat.png" alt="">
-    <img v-else class="fixed z-50 h-12 bottom-4 right-4" src="~/assets/images/other/btn_chat_dark.png" alt="">
-    <!-- chat button -->
   </div>
 </template>
 
