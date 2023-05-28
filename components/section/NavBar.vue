@@ -61,8 +61,9 @@
           >Contacts</a>
         </div>
         <div class="text-dark absolute z-50 right-5 top-16">
-        <modules-LightDarkModeSwitcher/>
-      </div>
+          <modules-LanguageSwitcher/>
+          <modules-LightDarkModeSwitcher/>
+        </div>
       </nav>
     </header>
   </div>
