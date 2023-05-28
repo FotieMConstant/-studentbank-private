@@ -38,7 +38,9 @@
           <a
             class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
             href="/#banque"
-          >Banque</a>
+          >
+              {{ $t('bank') }}
+          </a>
           <a
             class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
             href="/#logement"
@@ -60,8 +62,10 @@
             href="/contact"
           >Contacts</a>
         </div>
-        <div class="text-dark absolute z-50 right-5 top-16">
+        <div class="text-dark absolute z-50 top-16 right-20">
           <modules-LanguageSwitcher/>
+        </div>
+        <div class="text-dark absolute z-50 right-5 top-16">
           <modules-LightDarkModeSwitcher/>
         </div>
       </nav>
