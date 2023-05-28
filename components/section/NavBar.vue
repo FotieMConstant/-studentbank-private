@@ -37,27 +37,27 @@
         >
           <a
             class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
-            href="#"
+            href="/#banque"
           >Banque</a>
           <a
             class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="#"
+            href="/#logement"
           >Logement</a>
           <a
             class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="#"
+            href="/#mobilite"
           >Mobilité</a>
           <a
             class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="#"
+            href="/our-mission"
           >Notre mission</a>
           <a
             class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="#"
+            href="/team"
           >L’équipe</a>
           <a
             class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="#"
+            href="/contact"
           >Contacts</a>
         </div>
         <div class="text-dark absolute z-50 right-5 top-16">
@@ -65,11 +65,34 @@
       </div>
       </nav>
     </header>
+    <!-- chat button -->
+    <img v-if="isDark" class="fixed z-50 h-12 bottom-4 right-4" src="~/assets/images/other/btn_chat.png" alt="">
+    <img v-else class="fixed z-50 h-12 bottom-4 right-4" src="~/assets/images/other/btn_chat_dark.png" alt="">
+    <!-- chat button -->
   </div>
 </template>
 
 <script>
+import store from "@/store"
+
 export default {
+  data() {
+      return {
+        isDark: store.getters.getIsDark,
+	  }
+  },
+  computed: {
+        myDarkModeState:function(){
+            return store.state.isDark; // return the state value in `myDarkModeState`
+        }
+    },
+    watch: {
+    myDarkModeState:function(){
+      // this function will trigger when ever the value of `myDarkModeState` changes
+      this.isDark = store.state.isDark;
+        console.log(this.isDark);
+    }
+  },
   mounted () {
     const nav = document.getElementById('site-menu')
     const header = document.getElementById('top')

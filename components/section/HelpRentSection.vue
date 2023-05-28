@@ -1,5 +1,5 @@
 <template>
-	<section class="relative bg-white dark:bg-brown-dark dark:text-white p-16">
+	<section id="logement" class="relative bg-white dark:bg-brown-dark dark:text-white p-20">
         <h2 class="text-3xl font-bold leading-none text-center">Aide à la location</h2>
         <div class="flex px-3 mt-16"> 
             <div class="text-left w-6/12">

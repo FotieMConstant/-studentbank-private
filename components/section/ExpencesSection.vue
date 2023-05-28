@@ -1,5 +1,5 @@
 <template>
-	<section class="relative bg-orange-light dark:bg-brown-dark dark:text-white p-16 shadow-md">
+	<section id="banque" class="relative bg-orange-light dark:bg-brown-dark dark:text-white p-20 shadow-md">
         <h2 class="text-3xl font-bold leading-none text-center">Gérer vos dépenses</h2>
         <div class="flex px-3 mt-10">
             <!-- if dark mode -->
