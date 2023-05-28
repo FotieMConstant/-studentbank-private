@@ -16,7 +16,13 @@
 		</div>
 		<!-- services card -->
 		<div class="flex justify-between mx-6">
-			<modules-cards-services v-for="item in services" :title="item.name" :description="item.description" :img="item.img"/>
+			<a
+			v-for="item in services"
+            class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
+            :href="item.href"
+          	>
+			<modules-cards-services  :title="item.name" :description="item.description" :img="item.img"/>
+			</a>
 		</div>
 		<!-- /services card -->
 	</section>
@@ -29,17 +35,20 @@ export default {
 		  {
 			name: "Banque",
 			description: "Lorem ipsum dolor sit amet",
-			img: "1.png"
+			img: "1.png",
+			href:"/#banque"
 		  },
 		  {
 			name: "Logement",
 			description: "Lorem ipsum dolor sit amet",
-			img: "2.png"
+			img: "2.png",
+			href:"/#logement"
 		  },
 		  {
 			name: "Mobilité",
 			description: "Lorem ipsum dolor sit amet",
-			img: "3.png"
+			img: "3.png",
+			href:"/#mobilite"
 		  }
 		]
 	  }
