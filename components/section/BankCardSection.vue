@@ -1,4 +1,5 @@
 <template>
+<div class="hidden md:block">
 	<section class="relative bg-white dark:bg-brown-dark dark:text-white p-16">
         <h2 class="text-3xl font-bold leading-none text-center">Votre carte bancaire</h2>
         <div class="flex px-3 mt-16">            
@@ -19,6 +20,29 @@
         </div>
         <img v-if="isDark" class="absolute top-0 right-0 object-cover h-full z-0" src="~/assets/images/other/waves_dark.png" alt="">
 	</section>
+</div>
+<!-- for mobile -->
+<div class="block md:hidden">
+	<section class="relative bg-white dark:bg-brown-dark dark:text-white p-6">
+        <h2 class="text-3xl font-bold leading-none text-left">Nos cartese</h2>
+        <div class="">            
+            <div class="text-left w-full">
+                <!-- if dark mode -->
+                <div v-if="isDark" class="px-6">
+                  <img class="w-full"  src="~/assets/images/other/bank_card_dark.png" alt="">
+                </div>  
+                <div v-else class="px-6">
+                  <img  class="w-full" src="~/assets/images/other/bank_card_light.png" alt="">
+                </div>
+                <div class="my-6">
+                    <div>Payez en ligne, en magasin ou dans vos sites favoris, sans frais et en toute sécurité. Nos cartes ENKI, MAYA, HORIZON et EXOTIC vous assurent dans tous vos voyages et la gratuité des frais de retrait à l’international.</div>
+                </div>
+            </div>
+        </div>
+        <img v-if="isDark" class="absolute top-0 right-0 object-cover h-full z-0" src="~/assets/images/other/waves_dark.png" alt="">
+	</section>
+</div>
+<!--/ for mobile -->
 </template>
 <script>
 import store from "@/store"

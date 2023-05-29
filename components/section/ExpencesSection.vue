@@ -1,5 +1,6 @@
 <template>
-	<section id="banque" class="relative bg-orange-light dark:bg-brown-dark dark:text-white p-20 shadow-md">
+    <div class="hidden md:block">
+    <section id="banque" class="relative bg-orange-light dark:bg-brown-dark dark:text-white p-20 shadow-md">
         <h2 class="text-3xl font-bold leading-none text-center">Gérer vos dépenses</h2>
         <div class="flex px-3 mt-10">
             <!-- if dark mode -->
@@ -20,6 +21,32 @@
         </div>
         <img v-if="isDark" class="absolute top-0 right-0 object-cover h-full z-0" src="~/assets/images/other/lines.png" alt="">
 	</section>
+    </div>
+    <!-- for mobile -->
+    <div class="block md:hidden">
+        <section id="banque" class="relative bg-orange-light dark:bg-brown-dark dark:text-white p-2 shadow-md pt-20">
+        <div class="flex px-3 mt-10">
+            <!-- if dark mode -->
+           <div class="flex space-x-3">
+           <div class="w-6/12">
+            <img class="h-full" src="~/assets/images/other/mobile_expenses.png" alt="">
+           </div>
+            <div class="text-4xl w-6/12">
+                Une banque pour les étudiants
+            </div>
+           </div>
+        </div>
+        <div class="text-left relative z-10 m-6">
+                <div class="space-y-5 mt-6">
+                    <div>Avec Studentbank, la banque 100% en ligne faite par et pour les étudiants, ouvrez votre compte bancaire depuis votre salle de classe en 5 min sans frais, ni commissions. </div>
+                </div>
+                <div class="mt-4 flex justify-left">
+                    <modules-buttons-secondary>Ouvrir mon compte</modules-buttons-secondary>
+                </div>
+        </div>
+	</section>
+    </div>
+    <!--/ for mobile -->
 </template>
 <script>
 import store from "@/store"

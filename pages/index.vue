@@ -1,8 +1,8 @@
 <template>
    <div>
-      <section-HeroHeader/>
+      <section-HeroHeader class="hidden md:block"/>
       <div>
-         <section-VideoBar/>
+         <section-VideoBar class="hidden md:block"/>
       </div>
       <div>
          <section-ExpencesSection/>
@@ -10,10 +10,13 @@
       <div>
          <section-BankCardSection/>
       </div>
-      <div>
+      <div class="hidden md:block">
          <section-YourAdvantagesSection/>
       </div>
-      <div>
+      <div class="block md:hidden">
+        <section-RentMobileSection/>
+      </div>
+      <div class="hidden md:block">
          <section-HelpRentSection/>
       </div>
       <div>
