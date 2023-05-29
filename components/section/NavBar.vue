@@ -1,71 +1,142 @@
 <template>
   <div>
+    <!-- for mobile -->
+    <div class="w-full py-3 dark:bg-orange-fade-hz bg-gray-700 dark:text-gray-900 text-white fixed flex justify-center space-x-2 z-50 sm:hidden">
+      <div class="my-auto">
+        Découvrez nos nouveaux partenaires
+      </div>
+      <svg class="h-5 my-auto" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"/>
+      </svg>
+
+    </div>
+    <!-- /for mobile -->
     <header
       id="top"
-      class="w-full flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l z-50	"
+      class="w-full flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l z-50	mt-12 sm:mt-auto"
     >
       <nav
         id="site-menu"
-        class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white dark:bg-gray-800 dark:text-white font-thin shadow sm:shadow-md"
+        class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white sm:dark:bg-gray-800 sm:dark:text-white text-gray-900 shadow sm:shadow-md"
       >
         <div
           class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center"
         >
-          <a
-            href="/"
-            class="no-underline py-1"
-          >
-            <h1 class="font-bold text-lg tracking-widest">
-              <div class="w-36">
-                  <img src="~/assets/images/logo.png" alt="">
-              </div>
-            </h1>
-          </a>
-          <button
+        <button
             id="menuBtn"
             class="hamburger block sm:hidden focus:outline-none"
             type="button"
             @click="navToggle"
           >
             <span class="hamburger__top-bun" />
+            <span class="hamburger__top-bun" />
             <span class="hamburger__bottom-bun" />
           </button>
+          <a
+            href="/"
+            class="no-underline py-1"
+          >
+            <h1 class="font-bold text-lg tracking-widest">
+              <div class="w-36">
+                  <img class="hidden sm:block" src="~/assets/images/logo.png" alt="">
+                  <!-- for mobile -->
+                  <img
+                  src="~/assets/images/other/logo_dark.png"
+                  class="block sm:hidden"
+                  />
+                  <!--/ for mobile -->
+
+              </div>
+            </h1>
+          </a>
+          <div></div>
         </div>
         <div
           id="menu"
-          class="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden"
+          class="w-full sm:w-auto h-[140vh] sm:h-full font-bold sm:font-normal self-end sm:self-center sm:flex flex-col sm:flex-row items-center py-1 pb-4 sm:py-0 sm:pb-0 hidden"
         >
-          <a
-            class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
-            href="/#banque"
+          <div
+          @click="navigateToPath('/#banque')"
+          class="flex justify-between text-dark cursor-pointer hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
           >
-              {{ $t('bank') }}
-          </a>
-          <a
-            class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="/#logement"
-          >Logement</a>
-          <a
-            class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="/#mobilite"
-          >Mobilité</a>
-          <a
-            class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="/our-mission"
-          >Notre mission</a>
-          <a
-            class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="/team"
-          >L’équipe</a>
-          <a
-            class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
-            href="/contact"
-          >Contacts</a>
+              <div>{{ $t('bank') }}</div>
+              <!-- icon for mobile -->
+              <svg class="h-5 my-auto sm:hidden" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"/>
+              </svg>
+              <!-- icon for mobile -->
+          </div>
+          <div
+            @click="navigateToPath('/#logement')"
+            class="flex justify-between text-dark cursor-pointer hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+          >
+              <div>
+                Logement
+              </div>
+              <!-- icon for mobile -->
+              <svg class="h-5 my-auto sm:hidden" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"/>
+              </svg>
+              <!-- icon for mobile -->
+          </div>
+          <div
+            @click="navigateToPath('/#mobilite')"
+            class="flex justify-between text-dark cursor-pointer hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+          >
+          <div>
+            Mobilité
+          </div>
+           <!-- icon for mobile -->
+           <svg class="h-5 my-auto sm:hidden" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"/>
+            </svg>
+            <!-- icon for mobile -->
+          </div>
+          <div
+            @click="navigateToPath('/our-mission')"
+            class="flex justify-between text-dark cursor-pointer hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+            >
+            <div>
+              Notre mission
+            </div>
+            <!-- icon for mobile -->
+            <svg class="h-5 my-auto sm:hidden" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"/>
+              </svg>
+              <!-- icon for mobile -->
+          </div>
+          <div
+            @click="navigateToPath('/team')"
+            class="flex justify-between text-dark cursor-pointer hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+            >
+            <div>
+              L’équipe
+            </div>
+            <!-- icon for mobile -->
+            <svg class="h-5 my-auto sm:hidden" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"/>
+              </svg>
+              <!-- icon for mobile -->
+          </div>
+          <div
+            @click="navigateToPath('/contact')"
+            class="flex justify-between text-dark cursor-pointer hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+            >
+            <div>
+              Contacts
+            </div>
+            <!-- icon for mobile -->
+            <svg class="h-5 my-auto sm:hidden" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"/>
+              </svg>
+              <!-- icon for mobile -->
+          </div>
+          <img class="md:hidden w-full absolute bottom-0" src="~/assets/images/other/BG_mobile_waves_4.png" alt=""/>
         </div>
-        <div class="text-dark absolute z-50 top-16 right-20">
+        <div class="hidden lg:block text-dark absolute z-50 top-16 right-20">
           <modules-LanguageSwitcher/>
         </div>
-        <div class="text-dark absolute z-50 right-5 top-16">
+        <div class="hidden lg:block text-dark absolute z-50 right-5 top-16">
           <modules-LightDarkModeSwitcher/>
         </div>
       </nav>
@@ -119,6 +190,21 @@ export default {
       btn.classList.toggle('open')
       nav.classList.toggle('flex')
       nav.classList.toggle('hidden')
+    },
+    // navigate to path
+    navigateToPath(path){
+          const menuBtn = document.getElementById('menuBtn');
+          console.log(menuBtn)
+          // if it is open
+         if(menuBtn.classList.contains('open')){
+          console.log("it is open? ",menuBtn.classList.contains('open'))
+          this.navToggle(); //if it's open toggle it
+         }else{
+          console.log("it is NOT open? ",menuBtn.classList.contains('open'))
+         }
+         document.location.href = path;
+
+
     }
   }
 }
@@ -161,13 +247,14 @@ export default {
   position: absolute;
   width: 24px;
   height: 2px;
-  background: #000;
+  /* background: #000; */
+  @apply bg-white bg-gray-900;
   transform: rotate(0);
   transition: all 0.5s;
 }
 
 .hamburger:hover [class*='-bun'] {
-  background: #333;
+  /* background: #333; */
 }
 
 .hamburger__top-bun {
