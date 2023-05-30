@@ -24,8 +24,8 @@
     </div>
     <!-- for mobile -->
     <div class="block md:hidden">
-        <section id="banque" class="relative bg-orange-light dark:bg-brown-dark dark:text-white p-2 shadow-md pt-20">
-        <div class="flex px-3 mt-10">
+        <section id="banque" class="relative bg-orange-light dark:bg-brown-dark dark:text-white">
+        <div class="dark:bg-brown-dark bg-white text-gray-900 dark:text-white flex px-3 pt-36">
             <!-- if dark mode -->
            <div class="flex space-x-3">
            <div class="w-6/12">
@@ -36,8 +36,8 @@
             </div>
            </div>
         </div>
-        <div class="text-left relative z-10 m-6">
-                <div class="space-y-5 mt-6">
+        <div class="text-left relative z-10 p-6 dark:bg-gray-600">
+                <div class="space-y-5">
                     <div>Avec Studentbank, la banque 100% en ligne faite par et pour les étudiants, ouvrez votre compte bancaire depuis votre salle de classe en 5 min sans frais, ni commissions. </div>
                 </div>
                 <div class="mt-4 flex justify-left">

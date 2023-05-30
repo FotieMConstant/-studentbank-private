@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div id="topPage">
       <section-HeroHeader class="hidden md:block"/>
       <div>
          <section-VideoBar class="hidden md:block"/>
@@ -13,16 +13,18 @@
       <div class="hidden md:block">
          <section-YourAdvantagesSection/>
       </div>
-      <div class="block md:hidden">
-        <section-RentMobileSection/>
-      </div>
-      <div class="hidden md:block">
+      <div id="logement">
          <section-HelpRentSection/>
       </div>
+      <!-- for calling mobile verison -->
+      <div class="block md:hidden">
+         <section-YourAdvantagesSection/>
+      </div>
+      <!-- for calling mobile verison -->
       <div>
          <section-GoInternationalSection/>
       </div> 
-      <div>
+      <div class="hidden md:block">
          <section-TestimonialSection/>
       </div>
       <div>

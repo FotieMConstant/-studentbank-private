@@ -1,5 +1,6 @@
 <template>
-	<section id="logement" class="relative bg-white dark:bg-brown-dark dark:text-white p-20">
+<div class="hidden md:block">
+	<section class="relative bg-white dark:bg-brown-dark dark:text-white p-20">
         <h2 class="text-3xl font-bold leading-none text-center">Aide à la location</h2>
         <div class="flex px-3 mt-16"> 
             <div class="text-left w-6/12">
@@ -22,6 +23,14 @@
         </div>
         <img v-if="isDark" class="absolute top-0 right-0 object-cover h-full z-0" src="~/assets/images/other/waves_dark.png" alt="">
 	</section>
+  </div>
+  <!-- for mobile -->
+  <div class="block md:hidden">
+      <section-RentMobileSection/>
+  </div>
+  <!--/ for mobile -->
+
+
 </template>
 <script>
 import store from "@/store"

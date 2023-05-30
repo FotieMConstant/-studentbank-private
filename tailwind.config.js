@@ -48,6 +48,7 @@ module.exports = {
         },
         orange: "#EE7C00",
         gray: {
+          600: "#2B2728",
           700: "#231F20",
           800: "#353535",
           900: "#1D1D1B",
@@ -87,6 +88,7 @@ module.exports = {
         "brown-dark": "linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,1) 100%)",
         "orange-fade-hz": "linear-gradient(90deg, rgba(237,23,76,1) 0%, rgba(245,130,32,1) 100%)",
         "white-normal": "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%)",
+        "brown-orange-dark": "linear-gradient(100deg, rgba(237,23,76,1) 0%, rgba(245,130,32,1) 30%))",
         // 'leafs'
       }
     },

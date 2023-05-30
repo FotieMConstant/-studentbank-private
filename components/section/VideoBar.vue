@@ -41,5 +41,7 @@ export default {
 
 .video-content {
   z-index: 2;
+  position: absolute;
+  @apply mt-20
 }
 </style>

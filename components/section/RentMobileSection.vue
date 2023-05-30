@@ -1,5 +1,5 @@
 <template>
-	<section id="logement" class="relative bg-white dark:bg-brown-dark dark:text-white">
+	<section class="relative bg-white dark:bg-brown-dark dark:text-white">
         <h2 class="text-3xl font-bold leading-none text-left p-4 relative z-30">Location</h2>
         <div class="relative px-4 pb-6 z-30"> 
             <div class="text-left">

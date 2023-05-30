@@ -53,7 +53,7 @@
         </div>
         <div
           id="menu"
-          class="w-full sm:w-auto h-[140vh] sm:h-full font-bold sm:font-normal self-end sm:self-center sm:flex flex-col sm:flex-row items-center py-1 pb-4 sm:py-0 sm:pb-0 hidden"
+          class="w-full sm:w-auto h-[100vh] sm:h-full font-bold sm:font-normal self-end sm:self-center sm:flex flex-col sm:flex-row items-center py-1 pb-4 sm:py-0 sm:pb-0 hidden"
         >
           <div
           @click="navigateToPath('/#banque')"
@@ -127,11 +127,21 @@
             </div>
             <!-- icon for mobile -->
             <svg class="h-5 my-auto sm:hidden" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"/>
-              </svg>
+              <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"/>
+            </svg>
               <!-- icon for mobile -->
           </div>
-          <img class="md:hidden w-full absolute bottom-0" src="~/assets/images/other/BG_mobile_waves_4.png" alt=""/>
+            <!-- mobile language and theme switcher -->
+            <div class="sm:hidden absolute flex space-x-4 bottom-36 right-5">
+              <div class="text-dark relative z-50">
+                <modules-LanguageSwitcherMobile/>
+              </div>
+              <div class="text-dark relative z-50">
+                <modules-LightDarkModeSwitcherMobile/>
+              </div>
+            </div>
+            <!--/ mobile language and theme switcher -->
+          <img class="md:hidden w-full absolute bottom-24" src="~/assets/images/other/BG_mobile_waves_4.png" alt=""/>
         </div>
         <div class="hidden lg:block text-dark absolute z-50 top-16 right-20">
           <modules-LanguageSwitcher/>
