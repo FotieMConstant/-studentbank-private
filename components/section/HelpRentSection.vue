@@ -14,14 +14,14 @@
                 </div>
             </div>
             <!-- if dark mode -->
-           <div v-if="isDark" class="">
+           <div class="dark:block hidden">
              <img class="w-full object-contain h-[500px]"  src="~/assets/images/other/3droom_dark.png" alt="">
            </div>   
-           <div v-else class="">
+           <div class="dark:hidden block">
              <img  class="w-full object-contain h-[500px]" src="~/assets/images/other/3droom_light.png" alt="">
            </div>
         </div>
-        <img v-if="isDark" class="absolute top-0 right-0 object-cover h-full z-0" src="~/assets/images/other/waves_dark.png" alt="">
+        <img class="dark:block hidden absolute top-0 right-0 object-cover h-full z-0" src="~/assets/images/other/waves_dark.png" alt="">
 	</section>
   </div>
   <!-- for mobile -->

@@ -19,9 +19,8 @@
                 </div>
             </div>
             <img
-            v-if="isDark"
             src="~/assets/images/other/lines_n.png"
-            class="h-full absolute m-auto top-0 right-0 left-0 !z-0"
+            class="dark:block hidden h-full absolute m-auto top-0 right-0 left-0 !z-0"
             />
             <a href="#topPage">
             <div class="flex absolute bottom-6 right-6 cursor-pointer select-none space-x-2">
@@ -58,7 +57,7 @@
                 </div>
             </div>
             <!-- if dark -->
-            <img  v-if="isDark" class="absolute h-full w-full top-0 mx-auto right-0 left-0" src="~/assets/images/other/fade_international.png" alt="">
+            <img class="dark:block hidden absolute h-full w-full top-0 mx-auto right-0 left-0" src="~/assets/images/other/fade_international.png" alt="">
 
         </section>
   </div>

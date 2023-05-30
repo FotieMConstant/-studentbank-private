@@ -5,8 +5,8 @@
         <div class="flex px-3 mt-10">
             <!-- if dark mode -->
            <div class="">
-            <img class="w-full" v-if="isDark" src="~/assets/images/other/iphone_13_dark.png" alt="">
-            <img  class="w-full" v-else src="~/assets/images/other/iphone_13_white.png" alt="">
+            <img class="w-full dark:block hidden" src="~/assets/images/other/iphone_13_dark.png" alt="">
+            <img class="w-full dark:hidden block" src="~/assets/images/other/iphone_13_white.png" alt="">
            </div>
             <div class="text-left relative z-10">
                 <h2 class="text-xl font-bold leading-none">Banque</h2>
@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-        <img v-if="isDark" class="absolute top-0 right-0 object-cover h-full z-0" src="~/assets/images/other/lines.png" alt="">
+        <img class="dark:block hidden absolute top-0 right-0 object-cover h-full z-0" src="~/assets/images/other/lines.png" alt="">
 	</section>
     </div>
     <!-- for mobile -->

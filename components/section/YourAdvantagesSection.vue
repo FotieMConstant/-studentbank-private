@@ -19,8 +19,8 @@
             </div>
         </div>
         <div class="absolute top-0 left-0 object-cover h-full w-6/12 z-0">
-            <img class="w-full" v-if="isDark" src="~/assets/images/other/stonks_light.png" alt="">
-            <img  class="w-full" v-else src="~/assets/images/other/stonks_dark.png" alt="">
+            <img class="w-full dark:block hidden" src="~/assets/images/other/stonks_light.png" alt="">
+            <img  class="w-full dark:hidden block" src="~/assets/images/other/stonks_dark.png" alt="">
            </div>
 	</section>
 </div>
@@ -30,7 +30,8 @@
         <h2 class="text-3xl font-bold leading-none text-center">Vos avantages</h2>
         <div class="mt-10">
             <!-- if dark -->
-            <div v-if="isDark" class="flex justify-between">
+            <div class="dark:block hidden">
+            <div class="flex justify-between">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/1_dark.png" alt="">
                 <div class="relative flex">
                     <img class="h-16 object-cover" src="~/assets/images/other/icons/2_dark.png" alt="">
@@ -50,7 +51,10 @@
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/4_dark.png" alt="">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/5_dark.png" alt="">
             </div>
-            <div v-else class="flex justify-between">
+        </div>
+        <!-- light mode -->
+        <div class="dark:hidden block">
+            <div class="flex justify-between">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/1_light.png" alt="">
                 <div class="relative flex">
                     <img class="h-16 object-cover" src="~/assets/images/other/icons/2_light.png" alt="">
@@ -70,6 +74,7 @@
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/4_light.png" alt="">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/5_light.png" alt="">
             </div>
+        </div>
             <div class="px-4 w-full text-left relative z-10">
                 <div class="space-y-5 mt-6">
                     <div>Profitez des cashbacks ; des réductions ; des codes promos dans des enseignes (Nike, Amazon, Air campus) partenaires. </div>

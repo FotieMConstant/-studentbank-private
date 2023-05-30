@@ -13,8 +13,8 @@
             </div>
         </div>
             <!-- if dark mode -->
-            <img v-if="isDark" class="absolute top-0 w-full object-cover h-full"  src="~/assets/images/other/rent_mobile_dark.png" alt="">
-            <img v-else class="absolute top-0 w-full object-cover h-full" src="~/assets/images/other/rent_mobile_light.png" alt="">
+            <img class="dark:block hidden absolute top-0 w-full object-cover h-full"  src="~/assets/images/other/rent_mobile_dark.png" alt="">
+            <img class="dark:hidden block absolute top-0 w-full object-cover h-full" src="~/assets/images/other/rent_mobile_light.png" alt="">
 	</section>
 </template>
 <script>

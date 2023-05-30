@@ -134,14 +134,12 @@
   </div>
   <div class="flex justify-center">
   <img
-    v-if="isDark"
     src="~/assets/images/other/logo_light.png"
-    class="h-16 object-cover"
+    class="dark:block hidden h-16 object-cover"
     />
   <img
-    v-else
     src="~/assets/images/other/logo_dark.png"
-    class="h-16 object-cover"
+    class="dark:hidden block h-16 object-cover"
     />
   </div>
   </section>
