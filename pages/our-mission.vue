@@ -1,4 +1,8 @@
 <template>
+    <Head>
+      <Title>StudentBank - Our mission</Title>
+      <Meta name="description" content="Une banque pour les étudiants" />
+    </Head>
 	<section class="relative bg-white dark:bg-brown-dark dark:text-white p-16">
         <div class="flex mt-2 pb-20 space-x-10">            
            <div class="space-y-4 w-6/12">

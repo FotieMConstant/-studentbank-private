@@ -1,4 +1,8 @@
 <template>
+    <Head>
+      <Title>StudentBank - Une banque pour les étudiants</Title>
+      <Meta name="description" content="Une banque pour les étudiants" />
+    </Head>
    <div id="topPage">
       <section-HeroHeader class="hidden md:block"/>
       <div>

@@ -1,4 +1,8 @@
 <template>
+    <Head>
+      <Title>StudentBank - Download</Title>
+      <Meta name="description" content="Une banque pour les étudiants" />
+    </Head>
 	<section class="relative bg-white dark:bg-brown-dark dark:text-white p-16">
         <h2 class="text-3xl font-bold leading-none text-center">Télécharger l’application</h2>
         <div class="flex px-3 mt-2 pb-20">            

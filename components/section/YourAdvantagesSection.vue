@@ -32,14 +32,40 @@
             <!-- if dark -->
             <div v-if="isDark" class="flex justify-between">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/1_dark.png" alt="">
-                <img class="h-16 object-cover" src="~/assets/images/other/icons/2_dark.png" alt="">
+                <div class="relative flex">
+                    <img class="h-16 object-cover" src="~/assets/images/other/icons/2_dark.png" alt="">
+                    <!-- icon of new -->
+                    <div class="absolute top-0 right-0">
+                        <div class="w-10 h-4 relative">
+                        <div
+                            class="w-10 h-4 rounded bg-gradient-to-r from-[#ed174c] to-[#f58220] border border-[#ffffff]"
+                        ></div>
+                        <p class="absolute top-[2px] right-0 left-0 mx-0.5 w-8 h-2 text-[8px] text-left text-white">Nouveau</p>
+                        </div>
+                    </div>
+
+                    <!-- icon of new -->
+                </div>
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/3_dark.png" alt="">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/4_dark.png" alt="">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/5_dark.png" alt="">
             </div>
             <div v-else class="flex justify-between">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/1_light.png" alt="">
-                <img class="h-16 object-cover" src="~/assets/images/other/icons/2_light.png" alt="">
+                <div class="relative flex">
+                    <img class="h-16 object-cover" src="~/assets/images/other/icons/2_light.png" alt="">
+                    <!-- icon of new -->
+                    <div class="absolute top-0 right-0">
+                        <div class="w-10 h-4 relative">
+                        <div
+                            class="w-10 h-4 rounded bg-gradient-to-r from-[#ed174c] to-[#f58220] border border-[#231f20]"
+                        ></div>
+                        <p class="absolute top-[2px] right-0 left-0 mx-0.5 w-8 h-2 text-[8px] text-left text-white">Nouveau</p>
+                        </div>
+                    </div>
+
+                    <!-- icon of new -->
+                </div>
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/3_light.png" alt="">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/4_light.png" alt="">
                 <img class="h-16 object-cover" src="~/assets/images/other/icons/5_light.png" alt="">
